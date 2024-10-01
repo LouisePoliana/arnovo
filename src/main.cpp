@@ -228,6 +228,10 @@ void setup() {
 
 }
 void loop() {
+  bool teste = false;
+  if  (teste){
+    Serial.print("teste");
+  }
   connectMQTT();
   obterDatahora(dataFormatada);
   sensorTemp();
