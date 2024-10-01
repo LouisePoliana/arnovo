@@ -73,6 +73,7 @@ void connectMQTT(){
   }
   if (client.connect("esp32Client")){
     Serial.println("Conectado ao MQTT");
+  
     client.subscribe(temperatura);
     client.subscribe(movimento);
     client.subscribe(evaporadora);
